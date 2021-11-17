@@ -1,0 +1,50 @@
+<html>
+<body>
+  <div class="container-fluid">
+  <h1 class='text-center'>Pomodoro Clock</h1>    
+  <div class="row mins">
+    
+       <div class="offset-md-3" style="margin-right:30px">  
+          <p><h4>Break Length</h4></p>
+         <p class='minutes'>
+            <i id='minbreak' class="fa fa-minus-circle" aria-hidden="true"></i>
+          <span class="breakmin">5</span>
+            <i id='addbreak' class="fa fa-plus-circle" aria-hidden="true"></i>
+           </p>
+      
+      </div>
+        <!--Session div-->
+    <div class="offset-md-3"> 
+      <p><h4>Session Length</h4></p>
+      <p class='minutes'>
+      <i class="fa fa-minus-circle" aria-hidden="true" id="minsession"></i>
+      <span class="min">25</span>
+          <i class="fa fa-plus-circle" id='addsession' aria-hidden="true"></i>
+
+      </p>
+    </div>
+              </div><!-- end row1-->
+ <center>
+   <!--timer div start-->
+   <div class='timermin'>
+      <span id="status"></span>
+   <h1 id="timer">25:00</h1>
+   </div>
+   <br />
+   <!--buttons-->
+   <button id="start">Start</button>
+    <button id="resume">Resume</button>
+       <button id="reset" class='btns' >Re-set</button>
+      <button id="stop">Stop</button>
+    </center>
+  <!--footer-->
+<footer>
+  <hr />
+  <h4 class="text-center">Made By <a href="">Mns</a></h4>
+  </footer>
+        </div><!--end container-->
+
+
+ 
+</body>
+</html>    
