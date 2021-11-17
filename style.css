@@ -1,0 +1,60 @@
+body{
+  background-color:	#1C1C1C;
+  height:100%;
+}
+.mins{padding:10px}
+ 
+h1{
+  color:#fff;
+  margin:30px;
+  }
+
+span{
+  font-size:25px;
+  color:#fff;
+}
+
+/*make cursor pointer to + ,- */
+#addsession , #minsession , #addbreak , #minbreak{
+cursor:pointer;
+color : white
+}
+
+/*center div*/
+.center{
+  margin-left:350px
+}
+
+.minutes{
+  margin-left:30px
+}
+
+.timermin{
+  border:3px solid #fff;
+  border-radius:50px;
+  width:250px
+}
+i{
+  margin:10px;
+}
+h4{
+  color:#fff;
+}
+/*buttons style*/
+button{
+  padding:5px;
+  width:100px;
+  border:1px solid #fff;
+  background-color:#1C1C1C;
+  color:#fff;
+  border-radius:3px;
+  margin:5px;
+  cursor:pointer;
+}
+/*foooter*/
+footer{
+  margin-top:100px;
+}
+hr{
+  background-color:#fff
+}
