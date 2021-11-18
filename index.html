@@ -1,64 +1,64 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="23kYGTz2NlFYCkRwCMBsEchYQBc1fqN2tnvM9vKK32yMMzBlPPSP6vp3mPvMr+J2MOLITn6roAAJrC6rnf6Eaw==" />
 
-  </head>
-<body>
-  <div class="container-fluid">
-  <h1 class='text-center'>Pomodoro Clock</h1>    
-  <div class="row mins">
-    
-       <div class="offset-md-3" style="margin-right:30px">  
-          <p><h4>Break Length</h4></p>
-         <p class='minutes'>
-            <i id='minbreak' class="fa fa-minus-circle" aria-hidden="true"></i>
-          <span class="breakmin">5</span>
-            <i id='addbreak' class="fa fa-plus-circle" aria-hidden="true"></i>
-           </p>
-      
-      </div>
-        <!--Session div-->
-    <div class="offset-md-3"> 
-      <p><h4>Session Length</h4></p>
-      <p class='minutes'>
-      <i class="fa fa-minus-circle" aria-hidden="true" id="minsession"></i>
-      <span class="min">25</span>
-          <i class="fa fa-plus-circle" id='addsession' aria-hidden="true"></i>
-
-      </p>
-    </div>
-              </div><!-- end row1-->
- <center>
-   <!--timer div start-->
-   <div class='timermin'>
-      <span id="status"></span>
-   <h1 id="timer">25:00</h1>
-   </div>
-   <br />
-   <!--buttons-->
-   <button id="start">Start</button>
-    <button id="resume">Resume</button>
-       <button id="reset" class='btns' >Re-set</button>
-      <button id="stop">Stop</button>
-    </center>
-  <!--footer-->
-<footer>
-  <hr />
-  <h4 class="text-center">Made By <a href="">Mns</a></h4>
-  </footer>
-        </div><!--end container-->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<script src="script.js"></script>
-
- 
+<title>CodePen - Pomodoro Clock</title>
+<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-1580f96ce81ff0a427cf57dda2748ce646c38efc201ae5942a29958cffa6856d.css" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/global/global-287e19e0385dcda82839437227412a58ee4d27c64c582021f54dcac3cc8b2d9c.css" />
+<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/packs/css/everypage-82744f31.css" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/page/page-f140b10b168429b7c38af50f9c4aa86d0f041e8b099ad1cafc119805c7b61ed0.css" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/editor/editor-ec834d7ed6d95e38b2715af283b4c3fb6bd5d2aa0c3e0c37927cd2aea1e53e54.css" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="Pomodoro Clock">
+<meta name="twitter:description" content="...">
+<meta name="twitter:image" content="https://shots.codepen.io/mnsx/pen/KmYoqQ-800.jpg?version=1637220">
+<meta property="og:image" content="https://shots.codepen.io/mnsx/pen/KmYoqQ-800.jpg?version=1637220" itemprop="thumbnailUrl">
+<meta property="og:title" content="Pomodoro Clock">
+<meta property="og:url" content="https://codepen.io/mnsx/details/KmYoqQ">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fmnsx%2Fpen%2FKmYoqQ&format=json" title="Pomodoro Clock" />
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<script nonce="UYTZL925zS4=">
+  /* Firefox needs this to prevent FOUT */
+</script>
+</head>
+<body class="fullpage logged-in sidebar-false">
+<header id="main-header" class="main-header"></header>
+<div class="oldie-header">
+<a href="https://codepen.io/mnsx/pen/KmYoqQ">Edit Pen</a>
+</div>
+<div id="result-iframe-wrap" role="main">
+<iframe id="result" src="https://cdpn.io/mnsx/fullpage/KmYoqQ" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe" loading="lazy"></iframe>
+</div>
+<div id="full-view-ad"></div>
+<textarea id="init-data" style="display:none">{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown_device&quot;,&quot;mobile&quot;:false,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;95&quot;},&quot;__constants&quot;:{&quot;gridIframeSandboxAttributes&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts&quot;},&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;environment&quot;:&quot;production&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write&quot;,&quot;iframe_sandbox&quot;:&quot;allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot;},&quot;__user&quot;:{&quot;anon&quot;:false,&quot;base_url&quot;:&quot;/mnsx/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:null,&quot;hashid&quot;:&quot;DpBLWg&quot;,&quot;id&quot;:1063364,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;mns&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;mnsx&quot;,&quot;created_at&quot;:&quot;2017-02-01T03:54:24.000Z&quot;,&quot;email_verified&quot;:true,&quot;collections_count&quot;:1,&quot;collections_private_count&quot;:1,&quot;followers_count&quot;:1,&quot;followings_count&quot;:0,&quot;pens_count&quot;:11,&quot;pens_private_count&quot;:0,&quot;projects_count&quot;:0,&quot;projects_private_count&quot;:0},&quot;__firebase&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiRHBCTFdnIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNjM3MjI0NDgxLCJpYXQiOjE2MzcyMjA4ODEsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IkRwQkxXZyJ9.GZjWgiqShPgor1GiU8f7yocb1VpxlXUGGINzYpExz43menqT2sOR0oBW1y_daiFm8UK9L6aYbt3ALGtSwH2HL_vW_auNMvinj6M63WsAsKkCjKtHlZDEbeyUZC3748tuFtsC-iEcy5U5uKLlOS8aYHtN7OCYxXcqugmgUK0IGiF9lA-1VjUSQQgJlK43g3gY44Thri03DbldSR5Pwn0JsfCQS8L_dIkpI5yOQlOW6aJT5cpGoPmeXpuJrkgrv9G8hnSKZldADUWY05uq5xnDJ71slqATAEpbQ7SZ5ZM61496w_kcIVnAnQpFgZa8HI69Ooj6_3XvuKDkYqXdLaaCzg&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;DpBLWg&quot;,&quot;name&quot;:&quot;mns&quot;,&quot;title&quot;:&quot;mns&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/097ea480513224da8bf053a5086ed471?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;fit=crop&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/097ea480513224da8bf053a5086ed471?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;fit=crop&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;currentContext&quot;:{&quot;id&quot;:&quot;DpBLWg&quot;,&quot;baseUrl&quot;:&quot;/mnsx&quot;,&quot;title&quot;:&quot;mns&quot;,&quot;name&quot;:&quot;mns&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/097ea480513224da8bf053a5086ed471?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;fit=crop&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/097ea480513224da8bf053a5086ed471?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;fit=crop&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;username&quot;:&quot;mnsx&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/mnsx&quot;,&quot;username&quot;:&quot;mnsx&quot;,&quot;admin&quot;:false,&quot;anon&quot;:false,&quot;pro&quot;:false,&quot;verified&quot;:true,&quot;teams&quot;:[],&quot;__typename&quot;:&quot;User&quot;}}},&quot;__pay_stripe_public&quot;:&quot;pk_NgCjQmQs7wXOFmfNC0LKMgEkmlThn&quot;,&quot;__pay_braintree_env&quot;:&quot;production&quot;,&quot;__item&quot;:&quot;{\&quot;id\&quot;:15294363,\&quot;hashid\&quot;:\&quot;KmYoqQ\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;user_id\&quot;:1063364,\&quot;slug_hash\&quot;:\&quot;KmYoqQ\&quot;,\&quot;private\&quot;:false,\&quot;slug_hash_private\&quot;:\&quot;d63daf07178701372cdf2c26897db65c\&quot;}&quot;,&quot;__profiled&quot;:{&quot;base_url&quot;:&quot;/mnsx&quot;,&quot;hashid&quot;:&quot;DpBLWg&quot;,&quot;id&quot;:1063364,&quot;name&quot;:&quot;mns&quot;,&quot;type&quot;:&quot;user&quot;,&quot;username&quot;:&quot;mnsx&quot;},&quot;__pageType&quot;:&quot;full&quot;}</textarea>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+<script src="https://cpwebassets.codepen.io/assets/common/everypage-f84dd91ff413b23b8d1a6f7eadc615dc53c384f74f8254e068449db735b2c8cd.js"></script>
+<script src="https://fast.appcues.com/69186.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/common/analytics_and_notifications-afa6925cbcff840929f2b7c543587d5f9d7a461af81ee7ca80631c8e37ac42f2.js"></script>
+<script nonce="UYTZL925zS4=">
+LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};
+</script>
+<script src="https://cdn.speedcurve.com/js/lux.js?id=410041" async defer crossorigin="anonymous"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-b5fdc983719cf9de7c76.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/1-5aea3376c72b9e442029.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/everypage-0dc8a83c8577ae0bf503.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/full/full_page_renderer-8edf9934af5f33c7e00fe30580012df4d2ab48aad3bcc7f581030e5b876bff3b.js"></script>
 </body>
-</html>    
+</html>
