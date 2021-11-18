@@ -17,7 +17,8 @@ $( document ).ready(function() {
   //session time
   var session = parseInt($(".min").text());
   session = session*60;
-  
+  //alram sound
+  var audio = new Audio('Break! Get off your chair.mp3');
   //start session
   $('#start').on('click',function(){
    count = parseInt($('#timer').text());
@@ -88,7 +89,7 @@ function timer()
       clearInterval(inter);
       what=2;
      $("#status").text("Break!");
-      var audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+    
 audio.play();
       $(".timermin").css('border','3px solid #00b2ee');
       //set break time
